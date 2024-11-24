@@ -7,6 +7,7 @@ import Sidebar from "./components/Sidebar";
 import Map from "./components/Map";
 import Preloader from "./components/Preloader";
 import SearchArea from "./components/SearchArea";
+import ScrollTop from "./components/ScrollTop";
 // import "./script";
 
 const App = () => {
@@ -24,9 +25,11 @@ const App = () => {
 
       <Contact />
 
-      {/* <Map /> */}
+      <Map />
 
       <Footer />
+
+      <ScrollTop />
     </div>
   );
 };

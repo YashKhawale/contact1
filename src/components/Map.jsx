@@ -2,20 +2,36 @@ import React from "react";
 
 const Map = () => {
   return (
-    <div>
-      {/* <!-- Contact map area start here --> */}
-      <div className="contact__map">
+    <div className="w-full">
+      {/* Contact map area start here */}
+      <h2 className="text-center pb-20">Our Location</h2>
+
+      <div
+        style={{
+          width: "100%", // Default for mobile devices
+        }}
+      >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56186.6421240371!2d76.76460506215625!3d28.338734031425687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d40ee40f61ae9%3A0x7f08a0051c808b89!2sHaryana%20122503!5e0!3m2!1sen!2sin!4v1732124228683!5m2!1sen!2sin"
-          width="800"
-          height="600"
-          style="border:0;"
-          allowfullscreen=""
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2667.0152201972737!2d77.04271220974215!3d28.47027907565262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19ad5c000001%3A0xd745a75ac17bebbe!2sADM%20EDUCATION%20SOCIETY!5e1!3m2!1sen!2sin!4v1732296701998!5m2!1sen!2sin"
+          width="100%"
+          height="500"
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      {/* <!-- Contact map area end here --> */}
+
+      {/* Contact map area end here */}
+      <style>
+        {`
+          /* Media query for small screens */
+          @media (max-width: 768px) {
+            div[style*="width: 90%"] {
+              width: 95%; /* Increase width slightly for better mobile experience */
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
